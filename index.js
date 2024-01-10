@@ -95,7 +95,7 @@ const URL = `https://www.okx.com`;
     // return;
     request = await oxkRequest(object);
     console.log('Msg:', request?.data?.msg)
-    await pause(60000 * 10);
+    await pause(config.PAUSE_BETWEEN_WITHDRAWL_SEC * 1000);
   }
   process.exit();
 
